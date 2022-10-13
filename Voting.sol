@@ -3,17 +3,12 @@
 pragma solidity >=0.8.17;
 
 /**
- * @title Storage
- * @dev Store & retrieve value in a variable
- * @custom:dev-run-script ./scripts/deploy_with_ethers.ts
- */
+* @dev Contract module that allows the owner to rule a voting session for registered account
+*/
 
 import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/access/Ownable.sol";
 contract Voting is Ownable {
     
-    /**
-    * @dev Contract module that allows the owner to rule a voting session for registered account
-    */
     struct Voter {
         bool isRegistered;
         bool hasVoted;
