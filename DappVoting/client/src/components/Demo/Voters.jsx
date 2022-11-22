@@ -1,6 +1,5 @@
 import { useCallback } from "react";
 import { useState, useEffect } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import useEth from "../../contexts/EthContext/useEth";
 
 function Voters({ setVisibleOwner, setVisibleVoter, visibleVoter}) {
